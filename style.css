@@ -1,0 +1,320 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* ============================== CSS Root ============================== */
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,800;1,900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+html {
+  scroll-behavior: smooth;
+  text-decoration: none;
+  list-style: none;
+}
+
+/* ============================== CSS Reset  ============================== */
+body {
+  font-family: "Poppins", sans-serif;
+
+  color: #1b1b1b;
+  line-height: 1.6;
+}
+
+h1,
+h2,
+h3,
+ul,
+p {
+  margin: 0;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #1b1b1b;
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* ============================== Hero  ============================== */
+
+.section {
+  padding: 10rem 0 4rem 0;
+}
+.section__wrapper {
+  width: 1300px;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  text-align: left;
+  justify-content: left;
+}
+
+@media (max-width: 1350px) {
+  .section__wrapper {
+    width: 900px;
+  }
+}
+
+@media (max-width: 900px) {
+  .section {
+    padding: 12rem 0 4rem 0;
+  }
+
+  .section__wrapper {
+    width: 600px;
+  }
+}
+
+@media (max-width: 600px) {
+  .section__wrapper {
+    width: 320px;
+  }
+}
+
+/* ============================== landing ============================== */
+
+.landing__wrapper {
+  display: flex;
+  flex-flow: row nowrap;
+
+  align-items: center;
+}
+
+.landing-text__container {
+  width: 100%;
+  padding-right: 10rem;
+}
+.landing-text__company {
+  color: #148eeb;
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.landing-text__header {
+  font-size: 58px;
+  font-weight: 500;
+}
+
+.landing-text__description {
+  font-size: 20px;
+  font-weight: 400;
+
+  padding-bottom: 20px;
+}
+
+.landing__btn {
+  background-color: #148eeb;
+  color: #ffffff;
+  border: none;
+  border-radius: 10px;
+  padding: 15px 45px;
+}
+
+.landing-btn__text {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+@media (max-width: 900px) {
+
+  .landing-text__container {
+    width: 100%;
+    padding-right: 2rem;
+  }
+  .landing-text__company {
+    font-size: 20px;
+  }
+  
+  .landing-text__header {
+    font-size: 38px;
+  }
+  
+  .landing-text__description {
+    font-size: 14px;
+  }
+
+  .landing-btn__text {
+    font-size: 16px;
+  }
+  
+}
+
+@media (max-width: 600px) {
+  .landing {
+    padding-top: 4rem;
+  }
+  .landing__wrapper {
+    padding-top: 1rem;
+    padding-left: 2rem;
+  }
+  .landing__wrapper {
+    flex-flow: column wrap;
+    align-items: stretch;
+  }
+
+  
+  .landing-text__container {
+    padding-right: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  .landing-img__container {
+    width: 80%;
+  }
+
+  .landing-text__company {
+    font-size: 20px;
+  }
+  
+  .landing-text__header {
+    font-size: 48px;
+  }
+  
+  .landing-text__description {
+    font-size: 16px;
+  }
+
+  .landing-btn__text {
+    font-size: 18px;
+  }
+}
