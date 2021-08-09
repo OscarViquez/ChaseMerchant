@@ -177,7 +177,7 @@ img {
 /* ============================== Hero  ============================== */
 
 .section {
-  padding: 10rem 0 4rem 0;
+  padding: 4rem 0 4rem 0;
 }
 .section__wrapper {
   width: 1300px;
@@ -197,7 +197,7 @@ img {
 
 @media (max-width: 900px) {
   .section {
-    padding: 12rem 0 4rem 0;
+    padding: 5rem 0 4rem 0;
   }
 
   .section__wrapper {
@@ -207,12 +207,21 @@ img {
 
 @media (max-width: 600px) {
   .section__wrapper {
+    width: 375px;
+  }
+}
+
+@media (max-width: 375px) {
+  .section__wrapper {
     width: 320px;
   }
 }
 
 /* ============================== landing ============================== */
 
+.landing {
+  padding-bottom: 0;
+}
 .landing__wrapper {
   display: flex;
   flex-flow: row nowrap;
@@ -255,8 +264,50 @@ img {
   font-weight: 400;
 }
 
-@media (max-width: 900px) {
+.landing-img__container {
+  width: 70%;
+  text-align: left;
+}
 
+/* ============================================ */
+.cards__section {
+  padding-top: 0;
+}
+
+.landing__cards {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.landing__card {
+  background-color: #e9e9e9;
+  border-radius: 10px;
+
+  width: 30%;
+  /* margin: 0 1rem; */
+  padding: 45px 0;
+
+  text-align: center;
+}
+
+.landing-img__card {
+  margin-left: auto;
+  margin-right: auto;
+
+  width: 48px;
+}
+
+.landing__card-mid {
+  margin: 0 2rem;
+}
+
+.landing-card__text {
+  font-size: 24px;
+}
+
+/* ============================================ */
+
+@media (max-width: 900px) {
   .landing-text__container {
     width: 100%;
     padding-right: 2rem;
@@ -264,11 +315,11 @@ img {
   .landing-text__company {
     font-size: 20px;
   }
-  
+
   .landing-text__header {
     font-size: 38px;
   }
-  
+
   .landing-text__description {
     font-size: 14px;
   }
@@ -276,7 +327,14 @@ img {
   .landing-btn__text {
     font-size: 16px;
   }
-  
+
+  .landing__card-mid {
+    margin: 0 1rem;
+  }
+
+  .landing-card__text {
+    font-size: 14px;
+  }
 }
 
 @media (max-width: 600px) {
@@ -285,36 +343,45 @@ img {
   }
   .landing__wrapper {
     padding-top: 1rem;
-    padding-left: 2rem;
+    padding-left: 0;
+
+    text-align: center;
   }
   .landing__wrapper {
     flex-flow: column wrap;
     align-items: stretch;
   }
 
-  
   .landing-text__container {
-    padding-right: 2rem;
+    padding: 0 1rem;
     padding-bottom: 2rem;
   }
 
   .landing-img__container {
-    width: 80%;
+    width: 100%;
   }
 
   .landing-text__company {
     font-size: 20px;
   }
-  
+
   .landing-text__header {
     font-size: 48px;
   }
-  
+
   .landing-text__description {
     font-size: 16px;
   }
 
   .landing-btn__text {
     font-size: 18px;
+  }
+
+  .landing__card {
+    width: 100%;
+  }
+
+  .landing__card-mid {
+    margin: 1rem 0;
   }
 }
