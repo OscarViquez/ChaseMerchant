@@ -283,6 +283,11 @@ img {
   text-align: left;
 }
 
+.landing-img {
+  object-fit: cover;
+  /* object-position: top; */
+}
+
 /* ============================================ */
 .cards__section {
   padding-top: 0;
@@ -309,6 +314,7 @@ img {
   margin-right: auto;
 
   width: 48px;
+  
 }
 
 .landing__card-mid {
