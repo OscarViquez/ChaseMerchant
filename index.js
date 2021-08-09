@@ -7,22 +7,22 @@ timelineLanding.fromTo('.landing-img__container', {
     delay: .5,
     duration: 1
 })
-// .fromTo('.landing-text__company', {
-//     opacity: 0,
-//     x: 20
-// }, {
-//     x: 0,
-//     opacity: 1,
-//     duration: .5
-// },">-.5")
-// .fromTo('.landing-text__animation', {
-//     opacity: 0,
-//     x: 20
-// }, {
-//     x: 0,
-//     opacity: 1,
-//     duration: .7
-// })
+.fromTo('.landing-text__company', {
+    opacity: 0,
+    x: 20
+}, {
+    x: 0,
+    opacity: 1,
+    duration: .5
+},">-.5")
+.fromTo('.landing-text__animation', {
+    opacity: 0,
+    x: 20
+}, {
+    x: 0,
+    opacity: 1,
+    duration: .7
+})
 .fromTo('.landing__btn', {
     opacity: 0,
     x: 20
@@ -30,7 +30,7 @@ timelineLanding.fromTo('.landing-img__container', {
     x: 0,
     opacity: 1,
     duration: .7
-}, ">-.5")
+})
 
     // scrollTrigger: {
     //     trigger: '.landing__wrapper',
