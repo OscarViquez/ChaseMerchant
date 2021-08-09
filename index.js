@@ -1,4 +1,3 @@
-$(document).ready(function () {
     console.log("ready!");
 
     let timelineLanding = gsap.timeline({
@@ -27,5 +26,3 @@ $(document).ready(function () {
     timelineSolutions
         .from(".solution-p", { opacity: 0, duration: 1 }, "-1")
         .from(".solution-card ", { opacity: 0, duration: .5 },)
-
-});
