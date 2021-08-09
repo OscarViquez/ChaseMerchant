@@ -174,7 +174,7 @@ img {
   display: block;
 }
 
-/* ============================== Hero  ============================== */
+/* ============================== Component CSS ============================== */
 
 .section {
   padding: 4rem 0 4rem 0;
@@ -187,6 +187,20 @@ img {
 
   text-align: left;
   justify-content: left;
+}
+
+.section-md-btn {
+  background-color: #148eeb;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  padding: 15px 0;
+  width: 60%;
+}
+
+.section-md-btn__text {
+  font-size: 18px;
+  font-weight: 400;
 }
 
 @media (max-width: 1350px) {
@@ -255,7 +269,7 @@ img {
   background-color: #148eeb;
   color: #ffffff;
   border: none;
-  border-radius: 10px;
+  border-radius: 5px;
   padding: 15px 45px;
 }
 
@@ -336,6 +350,7 @@ img {
     font-size: 14px;
   }
 }
+/* ============================================ */
 
 @media (max-width: 600px) {
   .landing {
@@ -384,4 +399,158 @@ img {
   .landing__card-mid {
     margin: 1rem 0;
   }
+}
+
+/* ============================== Solution ============================== */
+
+
+.solution__header {
+  text-align: center;
+  padding: 5rem 0;
+}
+
+.solution-title {
+  font-size: 38px;
+  font-weight: 500;
+}
+
+.solution-p {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.solution-card__container {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.solution-card {
+  /* background-color: #e9e9e9; */
+  width: 31%;
+
+  padding: 45px 0;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  align-items: center;
+  text-align: center;
+}
+
+.solution-card-mid {
+  margin: 0 1rem;
+}
+
+.solution-card__img {
+  width: 200px;
+  height: auto;
+
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+}
+
+.solution-card__title {
+  font-size: 28px;
+  font-weight: 500;
+
+  margin-bottom: 10px;
+}
+
+.solution-card__p {
+  font-weight: 400;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  margin-bottom: 20px;
+
+  width: 60%;
+}
+
+@media (max-width: 1400px) {
+  .solution-card__container {
+    display: flex;
+    flex-flow: row wrap;
+  }
+
+  .solution-card {
+    width: 30%;
+
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .solution-card__p {
+    width: 85%;
+  }
+}
+
+@media (max-width: 1200px) {
+  .solution-card__container {
+    display: flex;
+    flex-flow: column wrap;
+  }
+
+  .solution-card {
+    /* background-color: #e9e9e9; */
+    width: 100%;
+
+    padding: 45px 0;
+
+    margin-left: 0;
+    margin-right: 0;
+
+    align-items: center;
+    text-align: center;
+  }
+
+  .solution-card__p {
+    width: 60%;
+  }
+}
+
+
+@media (max-width: 600px) {
+
+  .solution-card {
+    width: 100%;
+  }
+
+  .solution-card__p {
+    width: 80%;
+  }
+}
+
+
+/* ============================== Banner ============================== */
+
+.banner-solution {
+  background-color: #FFF7EB;
+
+}
+
+.banner-solution__wrapper {
+  text-align: center;
+}
+
+.banner-solution__title {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.banner-solution__p {
+  font-size: 18px;
+  font-weight: 400;
+
+
+}
+
+@media (max-width: 600px) {
+  .banner-solution__wrapper {
+    text-align: center;
+    padding: 0 30px;
+  }
+  
 }
