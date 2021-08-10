@@ -203,6 +203,21 @@ img {
   font-weight: 400;
 }
 
+.section-lg-btn {
+  display: block;
+  background-color: #148eeb;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  padding: 15px 0;
+  width: 100%;
+}
+
+.section-lg-btn__text {
+  font-size: 18px;
+  font-weight: 400;
+}
+
 @media (max-width: 1350px) {
   .section__wrapper {
     width: 900px;
@@ -229,6 +244,13 @@ img {
   .section__wrapper {
     width: 320px;
   }
+
+  .section-lg-btn {
+    width: 90%;
+
+    margin: 0 auto;
+  }
+  
 }
 
 /* ============================== landing ============================== */
@@ -315,7 +337,6 @@ img {
   margin-right: auto;
 
   width: 48px;
-  
 }
 
 .landing__card-mid {
@@ -409,7 +430,6 @@ img {
 }
 
 /* ============================== Solution ============================== */
-
 
 .solution__header {
   text-align: center;
@@ -517,9 +537,7 @@ img {
   }
 }
 
-
 @media (max-width: 600px) {
-
   .solution-card {
     width: 100%;
   }
@@ -529,12 +547,11 @@ img {
   }
 }
 
-
-/* ============================== Banner ============================== */
+/* ============================== Banner Section ============================== */
 
 .banner-solution {
-  background-color: #FFF7EB;
-
+  padding: 5rem 0;
+  background-color: #fff7eb;
 }
 
 .banner-solution__wrapper {
@@ -550,14 +567,165 @@ img {
 .banner-solution__p {
   font-size: 18px;
   font-weight: 400;
-
-
 }
 
 @media (max-width: 600px) {
   .banner-solution__wrapper {
     text-align: center;
     padding: 0 30px;
+  }
+}
+
+/* ============================== lg card / Provide Section ============================== */
+
+.provide__wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  align-content: space-between;
+}
+
+.card-lg {
+  margin: 0 auto;
+}
+.card-img {
+  width: 408px;
+  padding-bottom: 10px;
+}
+
+.card__title {
+  font-size: 24px;
+  font-weight: 500;
+  padding-bottom: 5px;
+  text-align: center;
+}
+.card__paragraph {
+  font-size: 14px;
+  font-weight: 400;
+
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+@media (max-width: 900px) {
+  .provide__wrapper {
+    display: flex;
+    flex-flow: column wrap;
+    align-content: space-around;
+  }
+
+  .card-lg {
+    margin: 2rem 0;
+  }
+}
+
+
+/* ============================== Why Choose Chase? ============================== */
+.why-chase-header {
+  text-align: center;
+  margin: 4rem 0 4rem 0;
+}
+
+.why-chase-header__title {
+  font-size: 38px;
+  font-weight: 500;
+}
+
+.why-chase-cards {
+  display: flex;
+  flex-flow: column nowrap;
+
+  margin: 0 8rem;
+}
+
+.why-chase-card {
+  display: flex;
+  flex-flow: row nowrap;
+
+  align-items: center;
+
+  margin: 2rem 0;
+}
+
+.why-chase-card-text-wrapper {
+  /* padding: 0 auto; */
+  width: 50%;
+}
+.why-chase-card-text-wrapper__title,
+.why-chase-card-text-wrapper__paragraph {
+  width: 80%;
+}
+
+.why-chase-card-text-wrapper__title {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.why-chase-card-img-wrapper {
+  width: 50%;
+}
+
+.why-chase-card-img {
+  object-fit: cover;
+}
+
+@media (max-width: 1400px) {
+  .why-chase-cards {
+
+    margin: 0 1rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .why-chase-cards {
+    margin: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .why-chase-cards {
+    /* display: flex;
+    flex-flow: column nowrap;
+   */
+    margin: 0;
+  }
+
+  .why-chase-card {
+    display: flex;
+    flex-flow: column wrap;
+  
+  }
+
+  .why-chase-card-text-wrapper {
+    /* padding: 0 auto; */
+    width: 90%;
+
+    margin-bottom: 1rem;
+  }
+  .why-chase-card-text-wrapper__title,
+  .why-chase-card-text-wrapper__paragraph {
+    width: 100%;
+  }
+  
+  .why-chase-card-img-wrapper {
+    width: 90%;
+  }
+  
+}
+/* ============================== Banner #2 ============================== */
+
+.banner-solution-2__btn {
+  margin-top: 10px;
+  width: 30%;
+}
+
+.banner-solution-2__title {
+  font-size: 28px;
+}
+
+@media (max-width: 600px) {
+  .banner-solution-2__btn {
+    margin-top: 10px;
+    width: 100%;
   }
   
 }

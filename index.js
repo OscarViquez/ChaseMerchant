@@ -1,28 +1,43 @@
-    console.log("ready!");
+console.log("ready!");
 
-    let timelineLanding = gsap.timeline({
-        scrollTrigger: {
-            trigger: '.landing__wrapper',
+let timelineLanding = gsap.timeline({
+    scrollTrigger: {
+        trigger: '.landing__wrapper',
 
-        },
-    });
+    },
+});
 
-    timelineLanding
-        // .from(".landing-img", { opacity: 0, duration: .5 }, "-1")
-        .from(".landing-text__company", { opacity: 0, duration: .5 },)
-        .from(".landing-text__animation", { opacity: 0, duration: .5 })
-        .from(".landing__btn", { opacity: 0, duration: .5 })
+timelineLanding
+    .from(".landing-text__company", { opacity: 0, duration: .5 }, '-1')
+    .from(".landing-text__animation", { opacity: 0, duration: .7 })
+    .from(".landing__btn", { opacity: 0, duration: .2 })
 
 
-    // =================== Solutions Animation ==================== //
+// =================== Solutions Animation ==================== //
 
-    let timelineSolutions = gsap.timeline({
-        scrollTrigger: {
-            trigger: '.solution__wrapper',
+let timelineSolutions = gsap.timeline({
+    scrollTrigger: {
+        trigger: '.solution__wrapper',
 
-        },
-    });
+    },
+});
 
-    timelineSolutions
-        .from(".solution-p", { opacity: 0, duration: 1 }, "-1")
-        .from(".solution-card ", { opacity: 0, duration: .5 },)
+timelineSolutions
+    .from(".solution-p", { opacity: 0, duration: .7 }, "-1")
+    .from(".solution-card ", { opacity: 0, duration: .5 },)
+
+
+// =================== Solutions Animation ==================== //
+
+
+let timelineProvideCards = gsap.timeline({
+    scrollTrigger: {
+        trigger: '.provide__wrapper',
+
+    },
+});
+
+timelineProvideCards
+    .from(".provide-text__animation", { opacity: 0, duration: .7 }, "-1")
+    .from(".provide-btn__animation ", { opacity: 0, duration: .5 },)
+
